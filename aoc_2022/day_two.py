@@ -46,6 +46,7 @@ class RockPapersScissors:
 
         return selection_score + outcome_score
 
+
 def game(strategy_guide: str, strategy: Callable[[str, str], Tuple[str, str]]) -> int:
     """
     Rock defeats Scissors, Scissors defeats Paper, and Paper defeats Rock.
@@ -110,4 +111,3 @@ def strategy_part_two(them: str, strategy: str) -> (str, str):
         raise ValueError("Invalid strategy")
 
     return them, you
-
